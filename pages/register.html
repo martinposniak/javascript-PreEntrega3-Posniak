@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="pantalla-dividida">
+    <div class="izquierda">
+        <img src="../assets/img/tennis-court-dimensions.jpg" alt="">
+    </div>
+    <div class="register">
+        <form action="">
+            <div>
+                <h2>Registro</h2>
+            </div>
+            <div class="input-box">
+                <label for="nombre" id="labelNombre">Nombre</label>
+                <input type="text" id="nombre">
+                </div>
+            <div class="input-box">
+            <label for="userReg" id="labelUser">Usuario</label>
+            <input type="text" id="userReg">
+            </div>
+            <div class="input-box">
+                <label for="email" id="labelEmail">Email</label>
+                <input type="text" id="email">
+            </div>
+            <div class="input-box">
+                <label for="passReg" id="labelPass">Contraseña</label>
+                <input type="password" id="passReg">
+            </div>
+            <div class="input-box">
+                <input type="submit" id="registrar" value="Registrar"></input>
+                <!--<input type="submit" value="Ingresar" id="ingresar">-->
+            </div>
+            <div class="input-box">
+                <span class="mensajeReg">¿Ya tienes cuenta? Inicie sesión<a href="./login.html"> Aqui</a></span>
+            </div>
+        </form>
+    </div>
+    </section>
+    <script src="../js/register.js"></script>
+</body>
+</html>
