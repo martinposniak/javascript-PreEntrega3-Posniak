@@ -1,8 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Mukta', sans-serif;
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif;
+ }
+
+#bodyLogin{
+  color:rgb(82, 82, 209) ;
+}
+
+.index{
+  color: white;
+}
+
+.todoslosproductos h4{
+  color: white;
 }
 
 /*Acá comenzamos con la edición del register.html*/
@@ -16,7 +29,7 @@
 }
 
 /*Edicion del formulario*/
-form {
+.formLogin {
     width: 30rem;
     color: rgb(82, 82, 209);
 }
@@ -32,7 +45,7 @@ form {
 
 
 /* Registro del nombre que va a registrar el usuario en la pagina*/
-#nombre{
+#nombreReg{
     outline: none;
     border: none;
     border-bottom: 0.1rem solid black;
@@ -40,7 +53,7 @@ form {
     border-color: rgb(82, 82, 209);
 }
 
-#labelNombre{
+#labelNombreReg{
     margin-top: 1rem;
 }
 
@@ -53,12 +66,12 @@ form {
     border-color: rgb(82, 82, 209);
 }
 
-#labelUser{
+#labelUserReg{
     margin-top: 1rem;
 }
 
 /* Registro del email que va a registrar el usuario en la pagina*/
-#email{
+#emailReg{
     outline: none;
     border: none;
     border-bottom: 0.1rem solid black;
@@ -66,7 +79,7 @@ form {
     border-color: rgb(82, 82, 209);
 }
 
-#labelEmail{
+#labelEmailReg{
     margin-top: 1rem;
 }
 
@@ -80,7 +93,7 @@ form {
     border-color: rgb(82, 82, 209);
 }
 
-#labelPass{
+#labelPassReg{
     margin-top: 1rem;   
 }
 
@@ -113,6 +126,12 @@ form {
 
 
 /***Acá comenzamos con la edición de login.html***/
+
+/*Edicion del formulario*/
+.formRegister {
+    width: 30rem;
+    color: rgb(82, 82, 209);
+}
 
 
 .logIn{
@@ -167,3 +186,1837 @@ form {
     text-decoration: none;
     line-height: 5rem;
 }
+
+
+.menu {
+    width: 100%;
+    height: 4rem;
+    font-size: 1rem;
+    background: linear-gradient(#e0d17e, black);
+    color: #F4ECDC; }
+  
+   body:not(#bodyLogin) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+    background-repeat: no-repeat; }
+  
+  .titulo-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  
+  .titulo-brand h2 {
+    margin-top: 5rem; }
+  
+  .section-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0.8rem; }
+  
+  .marca {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  
+  .marca p {
+    width: 15.56rem;
+    font-size: 0.9rem; }
+  
+  .marcaPicture img {
+    display: flex;
+    flex-direction: row; }
+  
+  .titulo-productos {
+    display: flex;
+    justify-content: center; }
+  
+  .titulo-productos h2 {
+    margin-top: 5rem; }
+  
+  .todoslosproductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center; }
+  
+  .todoslosproductos a {
+    text-decoration: none; }
+  
+  /**Acá comienza la edición de raquets.html**/
+  /*Acá comienza la edición del main, dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
+  /*Acá comienza la edición del titulo del main de raquets.html*/
+  .titulo-raquetas h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    color: white;
+   }
+  
+  .grid-containerRaquetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /*
+    grid-template-areas: "raque-modeloUno raque-modeloDos raque-modeloTres raque-modeloCuatro"
+   "raque-modeloCinco raque-modeloSeis raque-modeloSiete raque-modeloOcho"
+   "raque-modeloNueve raque-modeloDiez raque-modeloOnce raque-modeloDoce"
+   "raque-modeloTrece raque-modeloCatorce raque-modeloQuince raque-modeloDieciseis";
+   */
+    justify-items: center;
+    width: 100%; }
+
+    .grid-containerRaquetas h4{
+      color: white;
+    }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+  }
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 6rem;
+  }
+  .card-content h4 {
+    font-size: 0.9rem;
+   }
+
+    .card-content h5 span::before{
+      content: "$";
+    }
+
+    .card-content h5 span::after{
+      content: ",00 ARS";
+    }
+  
+  .card-content h5 span {
+    color: red;
+    font-size: 0.8rem; }
+  
+  .card-content {
+    text-align: center; }
+
+  
+  .raque-modeloUno {
+    grid-area: raque-modeloUno; }
+  
+  .raque-modeloDos {
+    grid-area: raque-modeloDos; }
+  
+  .raque-modeloTres {
+    grid-area: raque-modeloTres; }
+  
+  .raque-modeloCuatro {
+    grid-area: raque-modeloCuatro; }
+  
+  .raque-modeloCinco {
+    grid-area: raque-modeloCinco; }
+  
+  .raque-modeloSeis {
+    grid-area: raque-modeloSeis; }
+  
+  .raque-modeloSiete {
+    grid-area: raque-modeloSiete; }
+  
+  .raque-modeloOcho {
+    grid-area: raque-modeloOcho; }
+  
+  .raque-modeloNueve {
+    grid-area: raque-modeloNueve; }
+  
+  .raque-modeloDiez {
+    grid-area: raque-modeloDiez; }
+  
+  .raque-modeloOnce {
+    grid-area: raque-modeloOnce; }
+  
+  .raque-modeloDoce {
+    grid-area: raque-modeloDoce; }
+  
+  .raque-modeloTrece {
+    grid-area: raque-modeloTrece; }
+  
+  .raque-modeloCatorce {
+    grid-area: raque-modeloCatorce; }
+  
+  .raque-modeloQuince {
+    grid-area: raque-modeloQuince; }
+  
+  .raque-modeloDieciseis {
+    grid-area: raque-modeloDieciseis; }
+  
+  /*Acá comienza la edición para la sección de tips para elegir una raqueta de tenis*/
+  .comoElegirRaquetaDeTenis {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    color: white;
+   }
+  
+  .comoElegirRaquetaDeTenis h3 {
+    margin-left: 2.1875rem; }
+  
+  .comoElegirRaquetaDeTenisParrafoBlock {
+    display: block;
+    line-height: 1cm;
+    margin-left: 4.0625rem;
+    font-size: 0.9rem;
+    width: 55rem;
+    height: 7.5rem; }
+  
+  .comoElegirRaquetaDeTenisTipsDosParrafoBlock {
+    width: 55rem;
+    height: 10.5rem;
+    margin-left: 4.0625rem; }
+  
+  .comoElegirRaquetaDeTenisTips li {
+    margin-left: 4.0625rem;
+    padding-left: 1.5625rem;
+    line-height: 0.8cm;
+    font-size: 0.9rem; }
+  
+  .comoElegirRaquetaDeTenisTipsDos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%; }
+  
+  .comoElegirRaquetaDeTenisTipsDos h3 {
+    margin-top: 1rem; }
+  
+  .comoElegirRaquetaDeTenisTipsDosParrafo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%; }
+  
+  .comoElegirRaquetaDeTenisTipsDosParrafo p {
+    line-height: 0.8cm;
+    font-size: 0.9rem;
+    margin-left: 2.1875rem; }
+  
+  .comoElegirRaquetaDeTenisTipsDosParrafo .fotoRaquetaTips {
+    align-self: center; }
+  
+  .perfilesDeRaquetasParrafosBlock {
+    display: block;
+    line-height: 1cm;
+    margin-left: 4.0625rem;
+    font-size: 0.9rem;
+    width: 57rem; }
+  
+  /**Acá le agregué una animación a los 4 productos de raquets.html**/
+  /*Acá le agregué animación al modelo 1*/
+  .raque1 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloUno {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 2*/
+  .raque2 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloDos {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 3*/
+  .raque3 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloTres {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 4*/
+  .raque4 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloCuatro {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 5*/
+  .raque5 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloCinco {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 6*/
+  .raque6 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloSeis {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 7*/
+  .raque7 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloSiete {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 8*/
+  .raque8 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloOcho {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 9*/
+  .raque9 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloNueve {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 10*/
+  .raque10 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloDiez {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 11*/
+  .raque11 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloOnce {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 12*/
+  .raque12 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloDoce {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 13*/
+  .raque13 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloTrece {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 14*/
+  .raque14 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloCatorce {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 15*/
+  .raque15 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloQuince {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 16*/
+  .raque16 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .raque-modeloDieciseis {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /**Acá comienza la edición de shoes.html**/
+  /*Acá comienza la edición del main,  dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
+  .titulo-zapatillas h2 {
+    margin-top: 0.5rem;
+    text-align: center; 
+    color: white;
+  }
+  
+  .grid-containerShoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "shoes-modeloUno shoes-modeloDos shoes-modeloTres shoes-modeloCuatro"
+   "shoes-modeloCinco shoes-modeloSeis shoes-modeloSiete shoes-modeloOcho"
+   "shoes-modeloNueve shoes-modeloDiez shoes-modeloOnce shoes-modeloDoce";
+    justify-items: center; }
+
+    .grid-containerShoes h4{
+      color: white;
+    }
+  
+  .shoes h4 {
+    font-size: 0.9rem; }
+  
+  .shoes h5 span {
+    font-size: 0.8rem;
+    color: red; }
+  
+  .shoes {
+    text-align: center; }
+  
+  .shoes-modeloUno {
+    grid-area: shoes-modeloUno; }
+  
+  .shoes-modeloDos {
+    grid-area: shoes-modeloDos; }
+  
+  .shoes-modeloTres {
+    grid-area: shoes-modeloTres; }
+  
+  .shoes-modeloCuatro {
+    grid-area: shoes-modeloCuatro; }
+  
+  /**Acá le agregué una animación a los 12 productos de shoes.html**/
+  /*Acá le agregué animación al modelo 1*/
+  .shoes1 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloUno {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 2*/
+  .shoes2 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloDos {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 3*/
+  .shoes3 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloTres {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 4*/
+  .shoes4 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloCuatro {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 5*/
+  .shoes5 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloCinco {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 6*/
+  .shoes6 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloSeis {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 7*/
+  .shoes7 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloSiete {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 8*/
+  .shoes8 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloOcho {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 9*/
+  .shoes9 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloNueve {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 10*/
+  .shoes10 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloDiez {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 11*/
+  .shoes11 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloOnce {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 12*/
+  .shoes12 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .shoes-modeloDoce {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /**Acá comienza la edición de clothes.html**/
+  /*Acá comienza la edición del main,  dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
+  .titulo-clothes h2 {
+    text-align: center;
+    color: white;
+   }
+  
+  .grid-containerClothes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "clothes-modeloUno clothes-modeloDos clothes-modeloTres clothes-modeloCuatro";
+    justify-items: center; }
+
+    .grid-containerClothes h4{
+      color: white;
+    }
+  
+  .clothes h4 {
+    font-size: 0.9rem; }
+  
+  .clothes h5 span {
+    font-size: 0.8rem;
+    color: red; }
+  
+  .clothes {
+    text-align: center; }
+  
+  .clothes-modeloUno {
+    grid-area: clothes-modeloUno; }
+  
+  .clothes-modeloDos {
+    grid-area: clothes-modeloDos; }
+  
+  .clothes-modeloTres {
+    grid-area: clothes-modeloTres; }
+  
+  .clothes-modeloCuatro {
+    grid-area: clothes-modeloCuatro; }
+  
+  /**Acá le agregué una animación a los 4 productos de clothes.html**/
+  /*Acá le agregué animación al modelo 1*/
+  .clothes1 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .clothes-modeloUno {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 2*/
+  .clothes2 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .clothes-modeloDos {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 3*/
+  .clothes3 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .clothes-modeloTres {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 4*/
+  .clothes4 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .clothes-modeloCuatro {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /**Acá comienza la edición de balls.html**/
+  /*Acá comienza la edición del main,  dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
+  .titulo-pelotas h2 {
+    text-align: center;
+    color: white;
+  }
+  
+  .grid-containerPelotas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "pelotas-modeloUno pelotas-modeloDos pelotas-modeloTres pelotas-modeloCuatro";
+    justify-items: center; }
+
+    .grid-containerPelotas h4{
+      color: white;
+    }
+  
+  .pelotas h4 {
+    font-size: 0.9rem; }
+  
+  .pelotas h5 span {
+    font-size: 0.8rem;
+    color: red; }
+  
+  .vistaMobileBalls {
+    width: 8.75rem;
+    height: 8.75rem; }
+  
+  .pelotas {
+    text-align: center; }
+  
+  .pelotas-modeloUno {
+    grid-area: pelotas-modeloUno; }
+  
+  .pelotas-modeloDos {
+    grid-area: pelotas-modeloDos; }
+  
+  .pelotas-modeloTres {
+    grid-area: pelotas-modeloTres; }
+  
+  .pelotas-modeloCuatro {
+    grid-area: pelotas-modeloCuatro; }
+  
+  /**Acá le agregué una animación a los 4 productos de balls.html**/
+  /*Acá le agregué animación al modelo 1*/
+  .pelotas1 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .pelotas-modeloUno {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 2*/
+  .pelotas2 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .pelotas-modeloDos {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 3*/
+  .pelotas3 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .pelotas-modeloTres {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  /*Acá le agregué animación al modelo 4*/
+  .pelotas4 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  
+  .pelotas-modeloCuatro {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  
+  .contactoTitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+   }
+  
+  .contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+   }
+  
+  .contactoTexto {
+    display: flex;
+    flex-direction: column;
+    width: 31.25rem;
+    padding: 0.625rem; }
+  
+  .contactoTexto p {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; }
+  
+  .contactoTexto ul {
+    margin-bottom: 1rem;
+    padding-left: 2rem; }
+  
+  .contactoTexto ul {
+    list-style: none; }
+  
+  .contactForm form {
+    display: flex;
+    flex-direction: column; }
+  
+  .contactForm .contactFormNombreApellido {
+    align-self: center; }
+  
+  .contactForm .contactFormAsuntoEmail {
+    align-self: center; }
+  
+  .contactForm .textArea {
+    align-self: center; }
+  
+  .botonEnviar {
+    align-self: center;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 0.3125rem;
+    width: 5rem;
+    font-size: 1rem;
+    margin-bottom: 0.625rem; }
+  
+  .contactFormPartsOne {
+    border-bottom-right-radius: 0.9375rem;
+    border-top-left-radius: 0.9375rem;
+    width: 11.25rem;
+    height: 3.125rem;
+    color: black; }
+  
+  .contactFormPartsTwo {
+    border-bottom-right-radius: 0.9375rem;
+    border-top-left-radius: 0.9375rem;
+    width: 11.25rem;
+    height: 3.125rem;
+    color: black; }
+  
+  .textAreaModify {
+    border-bottom-right-radius: 2.5rem;
+    width: 22.5rem;
+    height: 18.125rem;
+    color: black; }
+  
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "news PreguntasFrecuentes datos"; }
+  
+  footer .news {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #ebeeeb 5px;
+    border-radius: 1rem;
+    padding: 5px;
+    grid-area: news;
+    color: white;
+   }
+  
+  footer .preguntasFrecuentes {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #ebeeeb 5px;
+    border-radius: 1rem;
+    padding: 5px; 
+    color: white;
+  }
+  
+  footer .preguntasFrecuentes .preguntasFrecuentes__1 a {
+    color: #ebeeeb; }
+  
+  footer .preguntasFrecuentes .preguntasFrecuentes__2 a {
+    color: #ebeeeb; }
+  
+  footer .preguntasFrecuentes li {
+    list-style: none; }
+  
+  footer .preguntasFrecuentes li a {
+    text-decoration: none;
+    color: black; }
+  
+  footer .datos {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #ebeeeb 5px;
+    border-radius: 1rem;
+    padding: 5px; 
+    color: white;
+  }
+  
+  footer .datos li {
+    list-style: none; }
+  
+  form .enviar {
+    color: black;
+    background-color: white;
+    width: 3.75rem;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    text-align: center; }
+  
+  @media (max-width: 992px) {
+    /*Acá comienza la edición de index.html para vista desktop*/
+    .titulo-brand h2 {
+      margin-top: 2.5rem;
+      font-size: 0.7rem; }
+    .navbar {
+      position: fixed;
+      z-index: 5; }
+    .navbar .container-fluid {
+      z-index: 5; }
+    .nav-item {
+      background-color: black; }
+    .dropdown {
+      background-color: black; }
+    .marca p {
+      width: 25.56rem;
+      font-size: 0.9rem; }
+    .marcaPicture img {
+      display: none; }
+    .titulo-productos h2 {
+      margin-top: 2.5rem;
+      font-size: 0.7rem; }
+    .todoslosproductos {
+      justify-content: center; }
+    .todoslosproductos h4 {
+      font-size: 0.7rem; }
+    .vistaMobileProductos {
+      width: 4.5rem;
+      height: 4.5rem; }
+    /*Acá comienza la edición de la sección 'contacto' y del formulario para vista desktop*/
+    .contactoTitulo h2 {
+      font-size: 0.7rem; }
+    .contactoTexto {
+      width: 21rem; }
+    .contacto {
+      justify-content: center; }
+    .contactoTexto h3 {
+      font-size: 0.7rem; }
+    .contactoTexto p {
+      font-size: 0.9rem; }
+    .contactoTexto ul {
+      font-size: 0.7rem; }
+    .vistaMobileEmail {
+      width: 1.5rem;
+      height: 1.5rem; }
+    .vistaMobileInstagram {
+      width: 1.5rem;
+      height: 1.5rem; }
+    .vistaMobileFacebook {
+      width: 1.5rem;
+      height: 1.5rem; }
+    .contactFormPartsOne {
+      border-bottom-right-radius: 0.9375rem;
+      border-top-left-radius: 0.9375rem;
+      width: 5rem;
+      height: 2rem;
+      font-size: 0.7rem; }
+    .contactFormPartsTwo {
+      border-bottom-right-radius: 0.9375rem;
+      border-top-left-radius: 0.9375rem;
+      width: 5rem;
+      height: 2rem;
+      font-size: 0.7rem; }
+    .textAreaModify {
+      border-bottom-right-radius: 2.5rem;
+      width: 10.5rem;
+      height: 8.125rem;
+      font-size: 0.7rem; }
+    .botonEnviar {
+      width: 3.75rem;
+      font-size: 0.75rem; }
+    form .enviar {
+      width: 1.85rem;
+      font-size: 0.45rem; }
+    /*Acá comienza la edición del footer para vista desktop*/
+    .news h4 {
+      font-size: 0.9rem; }
+    .news p {
+      font-size: 0.5rem; }
+    form .newsletterForm {
+      width: 3.5rem;
+      font-size: 0.55rem; }
+    form .newsletterFormDos {
+      width: 3.5rem;
+      font-size: 0.55rem; }
+    .preguntasFrecuentes {
+      padding: 1px; }
+    .preguntasFrecuentes h4 {
+      font-size: 0.9rem; }
+    .preguntasFrecuentes__1 a {
+      font-size: 0.7rem; }
+    .preguntasFrecuentes__2 a {
+      font-size: 0.7rem; }
+    .datos h4 {
+      font-size: 0.9rem; }
+    .iconoEmailDos {
+      width: 1.5rem;
+      height: 1.5rem; }
+    .iconoInstagramDos {
+      width: 1.5rem;
+      height: 1.5rem; }
+    .iconoFacebookDos {
+      width: 1.5rem;
+      height: 1.5rem; }
+    .datos ul li {
+      font-size: 0.7rem; }
+    /**Acá comienza la edición de raquets.html para vista desktop**/
+    .titulo-raquetas h2 {
+      margin-top: 0.5rem;
+      font-size: 0.8rem; }
+    .raquetasVistaMobile {
+      width: 4.6875rem;
+      height: 10.875rem; }
+    .raque h4 {
+      font-size: 0.7rem; }
+    .raque h5 span {
+      font-size: 0.6rem; }
+    .comoElegirRaquetaDeTenis h3 {
+      margin-left: 1.09375rem;
+      font-size: 0.9rem; }
+    .comoElegirRaquetaDeTenisParrafoBlock {
+      width: 25rem;
+      height: 7.5rem;
+      margin-left: 1.09375rem;
+      font-size: 0.7rem; }
+    .comoElegirRaquetaDeTenisTips li {
+      margin-left: 0.5rem;
+      padding-left: 0rem;
+      font-size: 0.6rem; }
+    .comoElegirRaquetaDeTenisTipsDos h3 {
+      margin-left: 1.09375rem;
+      font-size: 0.9rem; }
+    .comoElegirRaquetaDeTenisTipsDosParrafo p {
+      margin-left: 1.09375rem;
+      font-size: 0.75rem; }
+    .comoElegirRaquetaDeTenisTipsDosParrafoBlock {
+      width: 32rem;
+      height: 10.5rem;
+      margin-left: 1.09375rem; }
+    .comoElegirRaquetaDeTenisTipsDosParrafoBlock p {
+      font-size: 0.7rem; }
+    .perfilesDeRaquetasParrafosBlock {
+      width: 30rem;
+      margin-left: 1.09375rem;
+      font-size: 0.7rem; }
+    /**Acá comienza la edición de shoes.html para vista desktop**/
+    .titulo-zapatillas h2 {
+      margin-top: 0.5rem;
+      font-size: 0.7rem; }
+    .shoes h4 {
+      font-size: 0.5rem; }
+    .shoes h5 span {
+      font-size: 0.5rem; }
+    .vistaMobileShoes {
+      width: 7.5rem;
+      height: 5.625rem; }
+    /**Acá comienza la edición de clothes.html para vista desktop**/
+    .titulo-clothes h2 {
+      font-size: 0.7rem; }
+    .clothes h4 {
+      line-height: 0.4rem;
+      margin-top: 0.35rem;
+      font-size: 0.5rem; }
+    .clothes h5 span {
+      line-height: 0.1rem;
+      font-size: 0.5rem; }
+    .vistaMobileClothes {
+      width: 7.5rem;
+      height: 10rem; }
+    /**Acá comienza la edición de balls.html para vista desktop**/
+    .titulo-pelotas h2 {
+      margin-top: 0.5rem;
+      font-size: 0.9rem; }
+    .pelotas h4 {
+      font-size: 0.5rem; }
+    .pelotas h5 span {
+      font-size: 0.5rem; }
+    .vistaMobileBalls {
+      width: 6.25rem;
+      height: 6.25rem; } }
+  
+  @media (max-width: 576px) {
+    /*Acá comienza la edición de index.html para vista mobile*/
+    .container-fluid .navbar-brand {
+      font-size: 0.7rem; }
+    .titulo-brand h2 {
+      font-size: 0.5rem; }
+    .marca p {
+      width: 12.56rem;
+      font-size: 0.45rem; }
+    .titulo-productos h2 {
+      font-size: 0.5rem; }
+    .vistaMobileProductos {
+      width: 3.5rem;
+      height: 3.5rem; }
+    .todoslosproductos h4 {
+      font-size: 0.35rem; }
+    /*Acá comienza la edición de la sección 'contacto' y del formulario para vista mobile*/
+    .contactoTitulo h2 {
+      font-size: 0.5rem; }
+    .contacto {
+      flex-direction: column;
+      align-content: center; }
+    .contactoTexto {
+      width: 15rem; }
+    .contactoTexto h3 {
+      font-size: 0.5rem; }
+    .contactoTexto p {
+      font-size: 0.5rem; }
+    .contactoTexto ul {
+      font-size: 0.5rem; }
+    .contactForm form {
+      align-content: center; }
+    .flexStart1 {
+      align-self: center; }
+    .flexStart2 {
+      align-self: center; }
+    .vistaMobileEmail {
+      width: 1rem;
+      height: 1rem; }
+    .vistaMobileInstagram {
+      width: 1rem;
+      height: 1rem; }
+    .vistaMobileFacebook {
+      width: 1rem;
+      height: 1rem; }
+    /*Acá comienza la edición del footer para vista mobile*/
+    footer {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "news"
+   "PreguntasFrecuentes"
+   "datos"; }
+    .iconoEmailDos {
+      width: 1rem;
+      height: 1rem; }
+    .iconoInstagramDos {
+      width: 1rem;
+      height: 1rem; }
+    .iconoFacebookDos {
+      width: 1rem;
+      height: 1rem; }
+    /**Acá comienza la edición de raquets.html para vista mobile**/
+    .titulo-raquetas h2 {
+      font-size: 0.5rem; }
+    .raquetasVistaMobile {
+      width: 1.5625rem;
+      height: 3.625rem; }
+    .raque h4 {
+      font-size: 0.45rem; }
+    .raque h5 span {
+      font-size: 0.45rem; }
+    .comoElegirRaquetaDeTenis h3 {
+      margin-left: 1.09375rem;
+      font-size: 0.5rem; }
+    .comoElegirRaquetaDeTenisParrafoBlock {
+      width: 15rem;
+      height: 3.5rem;
+      line-height: 0.8rem;
+      margin-left: 1.09375rem;
+      font-size: 0.5rem; }
+    .comoElegirRaquetaDeTenisTips li {
+      width: 15rem;
+      margin-left: 0.1rem;
+      line-height: 0.8rem;
+      padding-left: 0rem;
+      font-size: 0.5rem; }
+    .comoElegirRaquetaDeTenisTipsDosParrafo p {
+      width: 12.5rem; }
+    .comoElegirRaquetaDeTenisTipsDos h3 {
+      margin-left: 1.09375rem;
+      font-size: 0.5rem; }
+    .comoElegirRaquetaDeTenisTipsDosParrafo p {
+      line-height: 0.8rem;
+      margin-left: 0.09375rem;
+      font-size: 0.5rem; }
+    .comoElegirRaquetaDeTenisTipsDosParrafoBlock {
+      width: 9rem;
+      height: 9.5rem;
+      margin-left: 1.09375rem; }
+    .comoElegirRaquetaDeTenisTipsDosParrafoBlock p {
+      font-size: 0.5rem;
+      line-height: 0.8rem; }
+    .perfilesDeRaquetasParrafosBlock {
+      width: 12rem;
+      margin-left: 1.09375rem;
+      font-size: 0.7rem; }
+    .fotoRaquetaTips img {
+      display: none; }
+    /**Acá comienza la edición de shoes.html para vista mobile**/
+    .titulo-zapatillas h2 {
+      font-size: 0.5rem; }
+    .shoes h4 {
+      font-size: 0.45rem; }
+    .shoes h5 span {
+      font-size: 0.45rem; }
+    .vistaMobileShoes {
+      width: 3.75rem;
+      height: 2.8125rem; }
+    /**Acá comienza la edición de clothes.html para vista mobile**/
+    .titulo-clothes h2 {
+      margin-top: 0.5rem;
+      font-size: 0.5rem; }
+    .clothes h4 {
+      line-height: 0.35rem;
+      margin-top: 0.5rem;
+      font-size: 0.35rem; }
+    .clothes h5 span {
+      line-height: 0rem;
+      font-size: 0.35rem; }
+    .vistaMobileClothes {
+      width: 3.75rem;
+      height: 5rem; }
+    /**Acá comienza la edición de balls.html para vista desktop**/
+    .titulo-pelotas h2 {
+      margin-top: 0.5rem;
+      font-size: 0.5rem; }
+    .pelotas h4 {
+      font-size: 0.35rem; }
+    .pelotas h5 span {
+      font-size: 0.35rem; }
+    .vistaMobileBalls {
+      width: 3.12rem;
+      height: 3.12rem; } }

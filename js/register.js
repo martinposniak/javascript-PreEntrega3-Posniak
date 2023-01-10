@@ -61,8 +61,8 @@ btnLogin.addEventListener('submit',(e)=>{
 
 
 const registro = document.querySelector(".register")
-email = document.querySelector("#email")
-nombre = document.querySelector("#nombre")
+email = document.querySelector("#emailReg")
+nombre = document.querySelector("#nombreReg")
 userReg = document.querySelector("#userReg")
 passReg = document.querySelector("#passReg")
 btnRegistrar = document.querySelector("#registrar")
@@ -92,11 +92,11 @@ if(localStorage.getItem("usuarios")){
 // Acá vamos a utilizar un operador que se llama 'this'. 'this' tiene muchos usos dentro de los que es la programación en si, y dentro de lo que es JavaScript. Pero nosotros a 'this' vamos a darle un uso especifico. Cuando yo declaro 'this.nombre' y la igualo al nombre del paramétro, cuando yo llame a la función, y construya este objeto, lo que voy a estar haciendo con el 'this' es asegurarme de que estoy haciendo referencia al nombre que recibo por parámetro. Lo mismo vamos a hacer con las otras propiedades (usuario, email, password).
 
 class Usuario {
-    constructor(nombre, usuario, email, password) {
+    constructor(nombre, userLog, email, passLog) {
         this.nombre = nombre;
-        this.usuario = usuario;
+        this.userLog = userLog;
         this.email = email;
-        this.password = password;
+        this.passLog = passLog;
     }
 }
 
