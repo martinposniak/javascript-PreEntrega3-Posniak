@@ -161,7 +161,7 @@
 
 #ingresar:hover{
     background-color: rgb(14, 107, 194);
-    transition: background-color 150ms 2ms; /*el primer parametro (150 minisegundos) es el tiempo que que va a tardar en hacer la transición, y el segundo parametro (150 minisegundos) es el delay, es decir, cuando quiero que arranque la transición o animación.*/
+    transition: background-color 150ms 2ms; /*el primer parametro (150 minisegundos) es el tiempo que que va a tardar en hacer la transición, y el segundo parametro (2 minisegundos) es el delay, es decir, cuando quiero que arranque la transición o animación.*/
 }
 
 
@@ -243,6 +243,47 @@
   
   .todoslosproductos a {
     text-decoration: none; }
+
+   /***Acá comienza la edición de carrito.html***/
+
+  .comprasTitulo {
+    display: flex;
+    flex-direction: column;
+  }
+        
+  .comprasTitulo h4{
+    align-self: center;
+  }
+
+  .sectionCarritoHTML{
+    display: flex;
+    flex-direction: row;
+  }
+
+ 
+
+
+
+
+    .btnBuy {
+      border-radius: 1rem;
+      height: 3rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+
+    .btnBuy:hover{
+      background-color: rgb(14, 107, 194);
+      transition: background-color 500ms 2ms;
+  }
+
+
+
+  /*Acá comienza la edición donde irían los productos del carrito*/
+
+
+
+
   
   /**Acá comienza la edición de raquets.html**/
   /*Acá comienza la edición del main, dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
@@ -269,7 +310,7 @@
     justify-items: center;
     width: 100%; }
 
-    .grid-containerRaquetas h4{
+    .grid-containerRaquetas h5{
       color: white;
     }
   .card-container{
@@ -283,9 +324,14 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    width: 6rem;
+    width: 18rem;
   }
-  .card-content h4 {
+  .card-action{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  .card-content h5 {
     font-size: 0.9rem;
    }
 
@@ -884,7 +930,7 @@
    "shoes-modeloNueve shoes-modeloDiez shoes-modeloOnce shoes-modeloDoce";
     justify-items: center; }
 
-    .grid-containerShoes h4{
+    .grid-containerShoes h5{
       color: white;
     }
   
@@ -1261,7 +1307,7 @@
     grid-template-areas: "clothes-modeloUno clothes-modeloDos clothes-modeloTres clothes-modeloCuatro";
     justify-items: center; }
 
-    .grid-containerClothes h4{
+    .grid-containerClothes h5{
       color: white;
     }
   
@@ -1414,7 +1460,7 @@
     grid-template-areas: "pelotas-modeloUno pelotas-modeloDos pelotas-modeloTres pelotas-modeloCuatro";
     justify-items: center; }
 
-    .grid-containerPelotas h4{
+    .grid-containerPelotas h5{
       color: white;
     }
   
@@ -1695,6 +1741,8 @@
     font-size: 0.75rem;
     border-radius: 5px;
     text-align: center; }
+
+
   
   @media (max-width: 992px) {
     /*Acá comienza la edición de index.html para vista desktop*/

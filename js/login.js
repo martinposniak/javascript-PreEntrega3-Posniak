@@ -45,3 +45,4 @@ btnIngresar.addEventListener("click", (e)=>{
 });
 
 
+//localStorage.clear()

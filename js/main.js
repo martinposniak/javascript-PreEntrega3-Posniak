@@ -1,0 +1,1 @@
+btnCarrito = document.querySelector("#carritoDeComprasLogo")

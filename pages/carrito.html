@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zapatillas de tenis</title>
+    <title>Match Point Palermo - Raquetas, Zapatillas, Indumentaria, Pelotas.</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../assets/img/sport-shoe.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/tennis.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <meta name="description" content="Zapatillas de tenis de la marca Nike.">
+    <meta name="description" content="MatchPointPalermo, el local de tenis mas grande de Latinoamerica.">
 </head>
-<body>
+<body class="index">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark menu">
             <div class="container-fluid">
@@ -22,7 +22,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="../index.html#nosotros">Nosotros</a>
+                    <a class="nav-link" href="index.html#nosotros">Nosotros</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,65 +38,68 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="shoes.html#contacto">Contacto</a>
+                    <a class="nav-link" href="index.html#contacto">Contacto</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <a class="nav-linkCart pe-4" id="carritoDeComprasLogo" href="../pages/carrito.html"><img src="../assets/img/carrito/carrito-de-compras-32px-blanco.png" alt=""></a>
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="buscar">
-                  <button class="btn btn-outline-light" type="submit" id="searchBox">Buscar</button>
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Buscar</button>
                 </form>
               </div>
             </div>
           </nav>
     </header>
     <main>
-        <section class="titulo-zapatillas">
-            <h2>ZAPATILLAS</h2>
-        </section>
-        <section class="grid-containerShoes">
-        
-        </section>
-        <hr>
-        <section class="contactoTitulo" id="contacto">
-            <h2>CONTACTO</h2>
-           </section>
-           <section class="contacto">
-            <section class="contactoTexto">
-                <h3>¿Como nos contactan?</h3>
-                <p>La forma más rápida es mandarnos un mensaje directo de Instagram, o por mail a matchpointpalermo@gmail.com. Respondemos lo más rápido posible.</p>
-                <ul>
-                    <li><img class="vistaMobileEmail" src="../assets/img/email2-blanco.png" alt="icono email"> matchpointpalermo@gmail.com</li>
-                    <li><img class="vistaMobileInstagram" src="../assets/img/instagram2-blanco.png" alt="icono instagram"> @matchpointpalermo</li>
-                    <li><img class="vistaMobileFacebook" src="../assets/img/facebook2-blanco.png" alt="icono facebook"> matchpointpalermo</li>
-                </ul>
-            </section>
-            <section class="contactForm">
-                <form>
-                    <div class="flexStart1">
-                    <div class="contactFormNombreApellido">
-                        <label for="nombre"></label>
-                        <input class="contactFormPartsOne" type="text" placeholder=" Nombre" name="nombre">
-                        <label for="apellido"></label>
-                        <input class="contactFormPartsOne" type="text" placeholder=" Apellido" name="apellido">
-                    </div>
-                    </div>
-                    <div class="flexStart2">
-                    <div class="contactFormAsuntoEmail">
-                        <label for="asunto"></label>
-                        <input class="contactFormPartsTwo" type="text" placeholder=" Asunto" name="asunto">
-                        <label for="email"></label>
-                        <input class="contactFormPartsTwo" type="email" placeholder=" Mail" name="email">
-                    </div>
-                    </div>
-                    <div class="textArea">
-                        <label for="comentario"></label>
-                        <textarea class="textAreaModify" name="comentario" id="" cols="50" rows="20" placeholder="Escribinos tu mensaje!"></textarea>
-                    </div>
-                    <input class="botonEnviar" type="submit" value="Enviar">
-                </form>
-            </section>
-           </section>
+      <section class="container-fluid carouselPrincipal m-0 p-0">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/img/djokovic-carrousel.jpg" class="d-block w-100" alt="djokovic">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/thiem-carousel.jpg" class="d-block w-100" alt="thiem">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/babolat-bag-carrousel.jpg" class="d-block w-100" alt="babolat">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section class="comprasTitulo">
+        <h4>Match Point Palermo</h4>
+        <p>Estos son tus productos seleccionados:</p>
+    </section>
+    <section class="sectionCarritoHTML">
+      <div id="carritoListaTotal">
+        <table class="tablaCarrito">
+          <thead>
+            <tr>
+              <th class="product-img">FOTO</th>
+              <th class="product-name">PRODUCTO</th>
+              <th class="product-price">PRECIO</th>
+              <th class="product-quantity">CANTIDAD</th>
+              <th class="product-subtotal">SUBTOTAL</th>
+              <th class="product-remove"></th>
+            </tr>
+          </thead>
+        </table>
+        <div class="contenedorLimpiarCarrito">
+          <button class="limpiarCarrito" id="limpiarCarrito"> Limpiar Carrito</button>
+          <button class="seguirComprando">
+            <a href="index.html#products"> Seguir Comprando</a>
+          </button>
+        </div>
+      </div>
+      <div id="cardTotal"></div>
+    </section>
     </main>
     <hr>
     <footer>
@@ -136,9 +139,9 @@
                 </li> 
             </ul>
         </section>
-    </footer> 
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-<script src="../js/shoes.js"></script>         
+<script src="../js/carrito.js"></script>           
 </body>
 </html>
