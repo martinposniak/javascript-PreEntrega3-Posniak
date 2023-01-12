@@ -96,11 +96,45 @@
         <div class="contenedorLimpiarCarrito">
           <button class="limpiarCarrito" id="limpiarCarrito"> Limpiar Carrito</button>
           <button class="seguirComprando">
-            <a href="index.html#products"> Seguir Comprando</a>
+            <a href="../index.html#products"> Seguir Comprando</a>
           </button>
         </div>
       </div>
-      <div id="cardTotal"></div>
+      <div class="cardTotal" id="cardTotal">
+        <div class="boxCardTotal">
+          <h2 class="tituloTotalCarrito">TOTAL CARRITO</h2>
+          <table class="tableTotalCard">
+            <tbody class="tbodyTotalCard">
+              <tr class="trTotalCard">
+                <th>Subtotal</th>
+                <td>
+                  <span>ARS$0.00</span>
+                </td>
+              </tr>
+              <tr class="trTotalCard">
+                <th>Envio a domicilio</th>
+                <td>
+                  <label for="CheckBoxEnvio">
+                    <span>ARS$500</span>
+                  </label>
+                  <input id="checkBoxEnvio" type="checkbox" name="CheckBoxEnvio" value="500">
+                </td>
+              </tr>
+              <tr class="trTotal">
+                <th>TOTAL</th>
+                <td>
+                  <span class="precioTotal" id="spanPrecioTotal">ARS$0.00</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <section class="sectionBtnCompra">
+            <button class="btnCompra" id="realizarCompra">
+              <a href="">COMPRAR</a>
+            </button>
+          </section>
+        </div>
+      </div>
     </section>
     </main>
     <hr>
