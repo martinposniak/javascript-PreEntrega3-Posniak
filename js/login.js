@@ -10,7 +10,7 @@ check = document.querySelector("#recordar")
 function inicioSesion(usuarios){
     //Codigo inicio de sesión
     let userFound = usuarios.find(usuario=>{
-        return usuario.nombre == userLog.value && usuario.passLog == passLog.value;
+        return usuario.userLog == userLog.value && usuario.passLog == passLog.value;
     });
     //Si userFound está encontrado, entonces redireccionar a la pagina index.html. Si userFound NO está encontrado, entonces sale 'undefined' y no redirecciona a ningun lado.
     if(userFound){
