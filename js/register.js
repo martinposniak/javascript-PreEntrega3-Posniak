@@ -22,6 +22,7 @@ if(localStorage.getItem("usuarios")){
 
 
 
+
 // constructor de usuario:
 // CLASES:
 // Una clase, en JavaScript, construye un objeto al igual que lo hace una función constructora.
@@ -81,6 +82,9 @@ function guardarEnStorage(elemento) {
 btnRegistrar.addEventListener("click", (e)=>{
     e.preventDefault()
     let newUser = new Usuario(nombre.value, userReg.value, email.value, passReg.value);
+    if(newUser){
+        document.querySelector(".mensajeReg2").innerHTML = "Muchas gracias " + nombre.value + "!" + " ya puedes iniciar sesión " + "!";
+    }
     console.log(newUser);
     limpiarCampos();
     guardarUsuario(newUser);
@@ -94,10 +98,11 @@ btnRegistrar.addEventListener("click", (e)=>{
 // METODO CLEAR:
 // El metodo clear borra todo. Lo puedo usar para borrar en el local o en el session!
 
-//localStorage.clear()
+// localStorage.clear()
 
 //sessionStorage.clear()
 
 // REMOVER (BORRAR) LOS ITEMS DEL LOCAL STORAGE O DEL SESSION STORAGE:
 // Tambien puedo remover los items, a traves de un metodo que se llama 'removeItem'. El metodo 'removeItem' recibe por parametro() el nombre del elemento que yo quiero remover. En este caso vamos a sacar el 'usuarios' (LINEA 70)
 //localStorage.removeItem('usuarios')
+
