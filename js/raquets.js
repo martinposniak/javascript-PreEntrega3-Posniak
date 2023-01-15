@@ -28,6 +28,7 @@ const raquetas = [
 
 console.log(raquetas);
 
+let carrito = [];
 
 // Función filtrar:
 
@@ -64,7 +65,25 @@ function crearHtml(array) {
             </div>`;
             contenedor.innerHTML += html
     }
+
+    const btnComprar = document.querySelectorAll(".btnBuy")
+
+btnComprar.forEach(el  => {
+    el.addEventListener('click', ()=>{
+        carrito.push({
+            id: raquetas.id,
+            nombre: raquetas.nombre,
+            precio: raquetas.precio,
+            img: raquetas.img
+        })
+    });
+})
+
 }
+
+
+
+
 
 // Llamar a la función crearHtml:
 

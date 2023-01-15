@@ -279,6 +279,9 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    border-bottom: 0.1rem solid #e6e6e6;
+    margin-top: 1.5rem;
+    padding-bottom: 0.9rem;
   }
 
   .trTotal{
@@ -286,6 +289,64 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin-top: 1.5rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .boxCardTotal{
+    display: flex;
+    flex-direction: column;
+    border: 0.2rem solid rgb(170, 170, 170);
+    padding: 1rem;
+  }
+
+  .contenedorLimpiarCarrito{
+    display: flex;
+    flex-direction: row;
+  }
+  .contenedorLimpiarCarrito .btnLimpiarCarrito{
+    width: 8rem;
+    height: 3.5rem;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    background-color: blue;
+    color: rgb(255, 255, 255); 
+  }
+
+  .contenedorLimpiarCarrito .btnSeguirComprando{
+    width: 9rem;
+    height: 3.5rem;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    background-color: blue;
+  }
+
+  .contenedorLimpiarCarrito .btnSeguirComprando a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);  
+  }
+
+  .sectionBtnCompra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .sectionBtnCompra .btnCompra{
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    background-color: blue;
+    font-weight: 600;
+  }
+
+  .sectionBtnCompra .btnCompra a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .btnCompra:hover{
+    background-color: rgb(14, 194, 44);
+    transition: background-color 400ms 2ms;
   }
 
 

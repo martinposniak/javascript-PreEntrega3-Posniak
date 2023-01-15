@@ -83,7 +83,14 @@ btnRegistrar.addEventListener("click", (e)=>{
     e.preventDefault()
     let newUser = new Usuario(nombre.value, userReg.value, email.value, passReg.value);
     if(newUser){
-        document.querySelector(".mensajeReg2").innerHTML = "Muchas gracias " + nombre.value + "!" + " ya puedes iniciar sesión " + "!";
+        Swal.fire({
+            position: 'center-center',
+            icon: 'success',
+            title: 'Muchas gracias ' + nombre.value + '!' + ' ya puedes iniciar sesión',
+            showConfirmButton: false,
+            timer: 2500
+          })
+        //document.querySelector(".mensajeReg2").innerHTML = "Muchas gracias " + nombre.value + "!" + " ya puedes iniciar sesión " + "!";
     }
     console.log(newUser);
     limpiarCampos();
