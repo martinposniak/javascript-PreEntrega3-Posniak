@@ -27,7 +27,7 @@ const raquetas = [
     {id:16, nombre: "Head SPEED MP 2022 16x19", precio: 89000, img: "../assets/img/raquetas/head/speed/head-Speed-mp-2022-16x19-sin-background.png"},
 ]
 
-let carrito = [];
+let carrito;
 
 console.log(raquetas);
 
@@ -76,6 +76,7 @@ function crearHtml(raquetas) {
                     img: raqueta.img
                 });
                 console.log(carrito);
+                guardarCarritoEnStorage(carrito);
             });
             
     }
@@ -101,3 +102,24 @@ btnBuscar.onclick = (e)=>{
 }
 
 
+
+function guardarCarritoEnStorage(elemento) {
+    return localStorage.setItem('carrito', JSON.stringify(elemento))
+  }
+  
+function recuperarLS(){
+    let datos = JSON.parse(localStorage.getItem("carrito"));
+    return datos;
+}
+  
+  if(localStorage.getItem("carrito")){
+    carrito = JSON.parse(localStorage.getItem("carrito"));
+  }else{
+    carrito = [];
+  }
+
+
+
+
+
+ //localStorage.clear(carrito)
