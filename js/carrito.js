@@ -27,12 +27,6 @@
 
 
 
-
-
-
-
-
-
 /*
 function renderRaquetaCarritoHTML(carritoRaquetas){
  

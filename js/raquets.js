@@ -5,6 +5,7 @@ contenedor = document.querySelector(".grid-containerRaquetas")
 
 
 
+
 // Array 'raquetas':
 
 const raquetas = [
@@ -26,9 +27,10 @@ const raquetas = [
     {id:16, nombre: "Head SPEED MP 2022 16x19", precio: 89000, img: "../assets/img/raquetas/head/speed/head-Speed-mp-2022-16x19-sin-background.png"},
 ]
 
+let carrito = [];
+
 console.log(raquetas);
 
-let carrito = [];
 
 // Función filtrar:
 
@@ -42,11 +44,11 @@ function filtrarRaquetas(filtro) {
 
 
 //Crear HTML:
-function crearHtml(array) {
+function crearHtml(raquetas) {
     let html;
     //Construir el html
     
-    for (const raqueta of array) {
+    for (const raqueta of raquetas) {
         html = 
             `<div class="card-container">
                 <div class="card">
@@ -64,23 +66,21 @@ function crearHtml(array) {
                 </div>
             </div>`;
             contenedor.innerHTML += html
+
+            const btnComprar = document.querySelector(".btnBuy")
+            btnComprar.addEventListener("click", ()=>{
+                carrito.push({
+                    id: raqueta.id,
+                    nombre: raqueta.nombre,
+                    precio: raqueta.precio,
+                    img: raqueta.img
+                });
+                console.log(carrito);
+            });
+            
     }
 
-    const btnComprar = document.querySelectorAll(".btnBuy")
-
-btnComprar.forEach(el  => {
-    el.addEventListener('click', ()=>{
-        carrito.push({
-            id: raquetas.id,
-            nombre: raquetas.nombre,
-            precio: raquetas.precio,
-            img: raquetas.img
-        })
-    });
-})
-
-}
-
+};
 
 
 
