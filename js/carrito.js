@@ -1,47 +1,49 @@
+const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
+const tabla = document.querySelector("#tablaCarrito")
 
+console.log(carrito)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-function renderRaquetaCarritoHTML(carritoRaquetas){
- 
-    tr.innerHTML += 
-    `<td> <img class="imgRaquetaCarrito" src="${carritoRaquetas.img}"></td>
-     <td><h3 class="nombreRaquetaCarrito">${carritoRaquetas.nombre}</h3></td>
-     <td><h5 class="precioRaquetaCarrito">${carritoRaquetas.precio}</h5></td>
-     <td>
-     <input id="btnResta${carritoRaquetas.id}" class="btnRe" type="button" value="-">
-     <h5 class="cantidadCarrito" id="cantidadCarritoTabla">${carritoRaquetas.cantidad}</h5>
-     <input id="btnSuma${raquetas.id}" class="btnSu" value="+" type="button">
-     </td>
-     <td><h5 class="subTotalCarrito">$${(
-        carritoRaquetas.precio * carritoRaquetas.cantidad
-      ).toFixed(2)}</h5></td>
-     <td></td>`
+if (carrito.length) {
+  for (const p of carrito) {
+    tabla.innerHTML += `
+    <tr class="raquetaEnCarritoContenedor">
+      <td><img class="carritoImage" src="${p.img}" alt=""></td>
+      <td class="carritoName"><h5>${p.nombre}</h5></td>
+      <td class="carritoPrice"><span>${p.precio}</span></td>
+      <td><input id="btnResta"${/* p.cantidad */1}</td>
+      <td class="carritoPriceTotal">${/* p.precio * cantidad */ p.precio}</td>
+    </tr>
+    `
+  }
 }
-*/
+else {
+  tabla.innerHTML = `<h2>No hay productos en el carrito</h2>`
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

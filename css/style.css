@@ -267,7 +267,34 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin-left: 1rem;
   }
+
+  .tablaCarrito thead tr .product-img{
+    width: 2.75rem;
+  }
+
+  .raquetaEnCarritoContenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5rem;
+  }
+
+  .raquetaEnCarritoContenedor .carritoImage{
+    width: 3.75rem;
+    height: 8.6875rem;
+  }
+
+  .raquetaEnCarritoContenedor .carritoName h5 {
+    font-size: 0.7rem;
+  }
+
+  .raquetaEnCarritoContenedor .carritoPrice span::before{
+    content: "$";
+  }
+
   .tbodyTotalCard{
     display: flex;
     flex-direction: column;
