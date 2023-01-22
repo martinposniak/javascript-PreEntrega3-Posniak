@@ -22,7 +22,7 @@ const tabla = document.querySelector("#tablaCarrito")
 
 
 console.log(carrito)
-function renderizar(carrito){
+function renderizar(){
   if (carrito.length) {
     for (const p of carrito) {
       tabla.innerHTML += `
@@ -42,7 +42,7 @@ function renderizar(carrito){
   const btnLimpiarTodoElCarrito = document.querySelectorAll("#limpiarCarrito")
   for (const btnLimpiar of btnLimpiarTodoElCarrito) {
     btnLimpiar.addEventListener("click", () => {
-      eliminarTodoElCarrito(carrito)
+      eliminarTodoElCarrito()
     });
 }
 }
@@ -54,7 +54,9 @@ renderizar()
 
 
 const eliminarTodoElCarrito = () => {
-  localStorage.clear(carrito);
+  localStorage.setItem("carrito", []);
+  carrito.splice(0, carrito.length);
+  renderizar()
 };
 
 
