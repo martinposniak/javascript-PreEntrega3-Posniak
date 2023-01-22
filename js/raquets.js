@@ -27,7 +27,7 @@ const raquetas = [
     { id: 16, nombre: "Head SPEED MP 2022 16x19", precio: 89000, img: "../assets/img/raquetas/head/speed/head-Speed-mp-2022-16x19-sin-background.png" },
 ]
 
-let carrito;
+//let carrito;
 
 
 // Función filtrar:
@@ -70,6 +70,16 @@ function crearHtml(raquetas) {
     for (const btn of btnComprar) {
         btn.addEventListener("click", () => {
             const raqueta = raquetas.find(raq => raq.id === parseInt(btn.id))
+            if(btn){
+                Swal.fire({
+                    position: 'center-center',
+                    icon: 'success',
+                    title: 'Se agregó a tu carrito de compras',
+                    showConfirmButton: false,
+                    timer: 2500
+                  })
+                //document.querySelector(".mensajeReg2").innerHTML = "Muchas gracias " + nombre.value + "!" + " ya puedes iniciar sesión " + "!";
+            }
             carrito.push(raqueta)
             console.log(carrito)
             guardarCarritoEnStorage(carrito)
@@ -106,11 +116,14 @@ function recuperarLS() {
     return datosCarrito;
 }
 
+/*
 if (localStorage.getItem("carrito")) {
     carrito = JSON.parse(localStorage.getItem("carrito"));
 } else {
-    carrito = [];
+    carrito.empty();
 }
+*/
+
 
 
 

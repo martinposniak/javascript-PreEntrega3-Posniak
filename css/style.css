@@ -376,6 +376,15 @@
     transition: background-color 400ms 2ms;
   }
 
+  #limpiarCarrito:hover{
+    background-color: rgb(14, 194, 44);
+    transition: background-color 400ms 2ms;
+  }
+
+  .btnSeguirComprando:hover{
+    background-color: rgb(14, 194, 44);
+    transition: background-color 400ms 2ms;
+  }
 
 /*Edición del boton 'agregar al carrito'*/
     .btnBuy {
