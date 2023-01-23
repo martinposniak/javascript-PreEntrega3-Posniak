@@ -30,15 +30,7 @@ const raquetas = [
 //let carrito;
 
 
-// Función filtrar:
 
-function filtrarRaquetas(filtro) {
-    let filtrado = raquetas.filter((el) => {
-        let nom = el.nombre.toLowerCase()
-        return nom.includes(filtro.toLowerCase())
-    });
-    return filtrado;
-}
 
 
 //Crear HTML:
@@ -95,15 +87,27 @@ function crearHtml(raquetas) {
 crearHtml(raquetas);
 
 
+// Función filtrar:
+
+function filtrarRaquetas(filtro) {
+    let filtrado = data.filter((el) => {
+        let nom = el.nombre.toLowerCase()
+        return nom.includes(filtro.toLowerCase())
+    });
+    return filtrado;
+}
+
+
 // Eventos Listeners de Busqueda:
 
 btnBuscar.onclick = (e) => {
     e.preventDefault()
     contenedor.innerHTML = "";
-    let filtro = filtrarRaquetas(search.value)
+    const data = fetchAPI()
+    const filtro = filtrarRaquetas(data, search.value)
     console.log(filtro);
     crearHtml(filtro);
-}
+}   
 
 
 
