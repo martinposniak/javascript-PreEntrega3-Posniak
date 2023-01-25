@@ -7,7 +7,7 @@ contenedor = document.querySelector(".grid-containerProductos")
 
 
 // Array 'raquetas':
-
+/*
 const productos = [
     { id: 1, nombre: "BABOLAT BOOST USA", precio: 69000, img: "../assets/img/raquetas/babolat/boost/raqueta-babolat-boost-usa-sin-background.png", categoria: "raquets"},
     { id: 2, nombre: "BABOLAT BOOST DRIVE", precio: 79000, img: "../assets/img/raquetas/babolat/boost/raqueta-babolat-boost-drive-sin-background.png", categoria: "raquets"},
@@ -47,7 +47,7 @@ const productos = [
     { id:36, nombre: "TUBO DE PELOTAS NASSAU SMASH X 3U", precio: 2999, img: "../assets/img/pelotas/pelotas-tenis-nassau-smash-tubox3-sin-background-280-279.png", categoria: "balls"},
 
 ]
-
+*/
 //let carrito;
 
  async function fetchAPI(){
