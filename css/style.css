@@ -419,7 +419,7 @@
     color: white;
    }
   
-  .grid-containerRaquetas {
+  .grid-containerProductos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -432,7 +432,7 @@
     justify-items: center;
     width: 100%; }
 
-    .grid-containerRaquetas h5{
+    .grid-containerProductos h5{
       color: white;
     }
   .card-container{

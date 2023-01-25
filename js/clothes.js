@@ -1,4 +1,4 @@
-
+/*
 const search = document.querySelector("#buscar")
 btnBuscar = document.querySelector("#searchBox")
 contenedor = document.querySelector(".grid-containerClothes")
@@ -7,13 +7,6 @@ contenedor = document.querySelector(".grid-containerClothes")
 
 // Array 'remeras':
 
-const remeras = [
-    {id:1, nombre: "REMERA NIKE RAFA SLIM POLO HOMBRE", precio: 69000, img: "../assets/img/indumentaria/remera-nike-mens-Rafa-Slim-Polo-sin-background.png"},
-    {id:2, nombre: "REMERA NIKE WINTER RAFA CHALLENGER CREW HOMBRE", precio: 79000, img: "../assets/img/indumentaria/remera-nike-mens-winter-rafa-challenger-crew-sin-background.png"},
-    {id:3, nombre: "REMERA NIKE CORE RAFA CHALLENGER TOP HOMBRE", precio: 89000, img: "../assets/img/indumentaria/remera-nike-mens-core-rafa-challenger-top-sin-background.png"},
-    {id:4, nombre: "CAMPERA NIKE WINTER RAFA JACKET HOMBRE", precio: 89000, img: "../assets/img/indumentaria/remera-nike-mens-winter-rafa-jacket-sin-background.png"},
-
-]
 
 console.log(remeras);
 
@@ -68,3 +61,5 @@ btnBuscar.onclick = (e)=>{
     console.log(filtro);
     crearHtml(filtro);
 }
+
+*/

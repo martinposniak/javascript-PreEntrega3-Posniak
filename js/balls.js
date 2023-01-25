@@ -1,4 +1,4 @@
-
+/*
 const search = document.querySelector("#buscar")
 btnBuscar = document.querySelector("#searchBox")
 contenedor = document.querySelector(".grid-containerPelotas")
@@ -7,12 +7,6 @@ contenedor = document.querySelector(".grid-containerPelotas")
 
 // Array 'pelotas':
 
-const pelotas = [
-    {id:1, nombre: "TUBO DE PELOTAS DUNLOP AO X 3U", precio: 3500, img: "../assets/img/pelotas/pelotas-tenis-dunlop-australian-open-tubox3-sin-background-280-280.png"},
-    {id:2, nombre: "TUBO DE PELOTAS DUNLOP EXTRA DUTY X 3U", precio: 3200, img: "../assets/img/pelotas/pelotas-tenis-dunlop-extra-duty-tubox3-sin-background-280-280.png"},
-    {id:3, nombre: "TUBO DE PELOTAS DUNLOP FORT CLAY COURT X 4U", precio: 5500, img:"../assets/img/pelotas/pelotas-tenis-dunlop-fort-clay-court-tubox4-sin-background-280-280.png"},
-    {id:4, nombre: "TUBO DE PELOTAS NASSAU SMASH X 3U", precio: 2999, img: "../assets/img/pelotas/pelotas-tenis-nassau-smash-tubox3-sin-background-280-279.png"},
-]
 
 console.log(pelotas);
 
@@ -67,3 +61,4 @@ btnBuscar.onclick = (e)=>{
     console.log(filtro);
     crearHtml(filtro);
 }
+*/
