@@ -3,96 +3,112 @@
       "id":1,
       "nombre":"BABOLAT BOOST USA",
       "precio":69000,
-      "img":"../assets/img/raquetas/babolat/boost/raqueta-babolat-boost-usa-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/boost/raqueta-babolat-boost-usa-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":2,
       "nombre":"BABOLAT BOOST DRIVE",
       "precio":79000,
-      "img":"../assets/img/raquetas/babolat/boost/raqueta-babolat-boost-drive-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/boost/raqueta-babolat-boost-drive-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":3,
       "nombre":"BABOLAT BOOST AERO DRIVE YELLOW",
       "precio":89000,
-      "img":"../assets/img/raquetas/babolat/boost/raqueta-babolat-boost-aero-yellow-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/boost/raqueta-babolat-boost-aero-yellow-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":4,
       "nombre":"BABOLAT BOOST AERO RAFA",
       "precio":89000,
-      "img":"../assets/img/raquetas/babolat/boost/babolat-boost-aero-rafa-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/boost/babolat-boost-aero-rafa-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":5,
       "nombre":"BABOLAT PURE STRIKE VS",
       "precio":89000,
-      "img":"../assets/img/raquetas/babolat/pure-strike/babolat-pure-strike-vs-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/pure-strike/babolat-pure-strike-vs-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":6,
       "nombre":"BABOLAT PURE STRIKE TOUR",
       "precio":99000,
-      "img":"../assets/img/raquetas/babolat/pure-strike/babolat-Pure-Strike-tour-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/pure-strike/babolat-Pure-Strike-tour-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":7,
       "nombre":"BABOLAT PURE STRIKE 100",
       "precio":89000,
-      "img":"../assets/img/raquetas/babolat/pure-strike/babolat-Pure-Strike-100-3rd-Gen-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/pure-strike/babolat-Pure-Strike-100-3rd-Gen-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":8,
       "nombre":"BABOLAT PURE STRIKE 16x19",
       "precio":99000,
-      "img":"../assets/img/raquetas/babolat/pure-strike/babolat-Pure-Strike-16x-19-3rd-Gen-white-and-red-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/pure-strike/babolat-Pure-Strike-16x-19-3rd-Gen-white-and-red-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":9,
       "nombre":"BABOLAT PURE AERO TEAM 2023",
       "precio":99000,
-      "img":"../assets/img/raquetas/babolat/pure-aero/babolat-Pure-Aero-Team-2023-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/pure-aero/babolat-Pure-Aero-Team-2023-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":10,
       "nombre":"BABOLAT PURE AERO TEAM",
       "precio":99000,
-      "img":"../assets/img/raquetas/babolat/pure-aero/babolat-pure-aero-rafa-team-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/pure-aero/babolat-pure-aero-rafa-team-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":11,
       "nombre":"BABOLAT PURE AERO",
       "precio":99000,
-      "img":"../assets/img/raquetas/babolat/pure-aero/babolat-pure-aero-top-seller-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/pure-aero/babolat-pure-aero-top-seller-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":12,
       "nombre":"BABOLAT PURE AERO RAFA",
       "precio":79000,
-      "img":"../assets/img/raquetas/babolat/pure-aero/babolat-pure-aero-rafa-sin-background.png"
+      "img":"../assets/img/raquetas/babolat/pure-aero/babolat-pure-aero-rafa-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":13,
       "nombre":"Head GRAPHENE 360 MP",
       "precio":79000,
-      "img":"../assets/img/raquetas/head/graphene/raqueta-head-graphene-360-mp-sin-background.png"
+      "img":"../assets/img/raquetas/head/graphene/raqueta-head-graphene-360-mp-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":14,
       "nombre":"Head RADICAL PRO",
       "precio":89000,
-      "img":"../assets/img/raquetas/head/radical/head-radical-pro-sin-background.png"
+      "img":"../assets/img/raquetas/head/radical/head-radical-pro-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":15,
       "nombre":"Head SPEED PRO 2022 18x20",
       "precio":89000,
-      "img":"../assets/img/raquetas/head/speed/head-Speed-Pro-2022-18x20-sin-background.png"
+      "img":"../assets/img/raquetas/head/speed/head-Speed-Pro-2022-18x20-sin-background.png",
+      "categoria":"raquets"
    },
    {
       "id":16,
       "nombre":"Head SPEED MP 2022 16x19",
       "precio":89000,
-      "img":"../assets/img/raquetas/head/speed/head-Speed-mp-2022-16x19-sin-background.png"
+      "img":"../assets/img/raquetas/head/speed/head-Speed-mp-2022-16x19-sin-background.png",
+      "categoria":"raquets"
    }
 ]
