@@ -1,1 +1,3 @@
-btnCarrito = document.querySelector("#carritoDeComprasLogo")
+btnCarrito = document.querySelector("#carritoDeComprasLogo");
+
+
