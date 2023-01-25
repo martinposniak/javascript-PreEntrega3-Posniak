@@ -1,7 +1,7 @@
 const search = document.querySelector("#buscar")
 contenedor = document.querySelector(".grid-containerProductos")
 
-//let carrito;
+let carrito = []; 
 
 async function fetchAPI(){
     const response = await fetch('../data/data.json');
@@ -14,30 +14,29 @@ async function fetchAPI(){
 fetchAPI()
 
 function filtrar(datos){
-    const nom = document.querySelector("#buscar");
-
+    const nombreProd = document.querySelector("#buscar");
     btnBuscar = document.querySelector("#searchBox");
 
     btnBuscar.addEventListener('click', (e)=> {
         e.preventDefault(); 
-        filtrarProductos(e, datos, nom);
+        filtrarProductos(datos, nombreProd);
     })
 
-    crearHtml(datos)
+    crearHtml(datos);
 }
 
-function filtrarProductos(e, datos, nom){
+function filtrarProductos(datos, nombreProd){
     console.log(datos)
-    console.log(nom.value)
-    e.preventDefault();
-    if(!nom){
+    console.log(nombreProd.value)
+    const producto = (nombreProd.value).toUpperCase();
+    if(!producto){
         crearHtml(datos)
         console.log(datos);
     }else{
-        const filtrado = datos.filter(el => el.nombre === nom.value)
+        const filtrado = datos.filter(el => el.nombre === producto)
         console.log(filtrado);
         crearHtml(filtrado);
-    }
+    }
 }
 
 //Crear HTML:
