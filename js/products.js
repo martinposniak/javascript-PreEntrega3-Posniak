@@ -33,7 +33,10 @@ function filtrarProductos(datos, nombreProd){
         crearHtml(datos)
         console.log(datos);
     }else{
-        const filtrado = datos.filter(el => el.nombre === producto)
+        const filtrado = datos.filter((el)=>{
+            let nom = el.nombre.toUpperCase()
+            return nom.includes(producto.toUpperCase());
+        });
         console.log(filtrado);
         crearHtml(filtrado);
     }

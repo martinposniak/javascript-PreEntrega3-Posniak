@@ -386,6 +386,11 @@
     transition: background-color 400ms 2ms;
   }
 
+
+  .td-input {
+    display: flex;
+  }
+
 /*Edición del boton 'agregar al carrito'*/
     .btnBuy {
       border-radius: 1rem;
@@ -398,7 +403,6 @@
       background-color: rgb(14, 107, 194);
       transition: background-color 500ms 2ms;
   }
-
 
 
   /*Acá comienza la edición donde irían los productos del carrito*/
