@@ -1,3 +1,6 @@
+const tabla = document.querySelector("#tablaCarrito")
+
+
 function renderizar(){
     if (carrito.length) {
       for (const p of carrito) {
@@ -30,7 +33,7 @@ function renderizar(){
   
   
   const eliminarTodoElCarrito = () => {
-    localStorage.setItem("carrito", []);
+    localStorage.setItem("carrito", JSON.stringify([]));
     carrito.splice(0, carrito.length);
     renderizar()
   };

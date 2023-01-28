@@ -85,28 +85,28 @@
    },
    {
       "id":13,
-      "nombre":"Head GRAPHENE 360 MP",
+      "nombre":"HEAD GRAPHENE 360 MP",
       "precio":79000,
       "img":"../assets/img/raquetas/head/graphene/raqueta-head-graphene-360-mp-sin-background.png",
       "cantidad":1
    },
    {
       "id":14,
-      "nombre":"Head RADICAL PRO",
+      "nombre":"HEAD RADICAL PRO",
       "precio":89000,
       "img":"../assets/img/raquetas/head/radical/head-radical-pro-sin-background.png",
       "cantidad":1
    },
    {
       "id":15,
-      "nombre":"Head SPEED PRO 2022 18x20",
+      "nombre":"HEAD SPEED PRO 2022 18x20",
       "precio":89000,
       "img":"../assets/img/raquetas/head/speed/head-Speed-Pro-2022-18x20-sin-background.png",
       "cantidad":1
    },
    {
       "id":16,
-      "nombre":"Head SPEED MP 2022 16x19",
+      "nombre":"HEAD SPEED MP 2022 16x19",
       "precio":89000,
       "img":"../assets/img/raquetas/head/speed/head-Speed-mp-2022-16x19-sin-background.png",
       "cantidad":1
